@@ -9,6 +9,7 @@ package com.mycompany.gestionequipo;
  * @author alber
  */
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 class Jugador {
@@ -52,7 +53,7 @@ public class GestionEquipo {
         jugadores.add(nuevoJugador);
         System.out.println("Jugador agregado: " + nuevoJugador);
     }
-
+    
     public void mostrarEquipo() {
         if (jugadores.isEmpty()) {
             System.out.println("El equipo está vacío.");
@@ -65,19 +66,27 @@ public class GestionEquipo {
     }
 
     public void eliminarJugador(String nombre) {
-        boolean encontrado = false;
-        for (Jugador jugador : jugadores) {
-            if (jugador.getNombre().equalsIgnoreCase(nombre)) {
-                jugadores.remove(jugador);
-                System.out.println("Jugador eliminado: " + jugador);
-                encontrado = true;
-                break;
-            }
-        }
-        if (!encontrado) {
-            System.out.println("Jugador no encontrado.");
+    Jugador jugadorAEliminar = null;
+
+    for (Jugador jugador : jugadores) {
+        if (jugador.getNombre().equalsIgnoreCase(nombre)) {
+            jugadorAEliminar = jugador;
+            break;
         }
     }
+
+    if (jugadorAEliminar != null) {
+        jugadores.remove(jugadorAEliminar);
+        System.out.println("Jugador eliminado: " + jugadorAEliminar);
+    } else {
+        System.out.println("Jugador no encontrado.");
+    }
+}
+
+    
+    public List<Jugador> getJugadores() {
+    return new ArrayList<>(jugadores); // Devuelve una copia de la lista para evitar modificaciones externas
+}
 
     public static void main(String[] args) {
         GestionEquipo gestionEquipo = new GestionEquipo();
@@ -119,6 +128,6 @@ public class GestionEquipo {
                 default:
                     System.out.println("Opción no válida. Intente de nuevo.");
             }
-        }
+        }1
     }
 }
