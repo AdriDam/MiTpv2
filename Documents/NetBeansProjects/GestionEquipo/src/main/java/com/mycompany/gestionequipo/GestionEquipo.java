@@ -128,6 +128,6 @@ public class GestionEquipo {
                 default:
                     System.out.println("Opción no válida. Intente de nuevo.");
             }
-        }1
+        }
     }
 }
