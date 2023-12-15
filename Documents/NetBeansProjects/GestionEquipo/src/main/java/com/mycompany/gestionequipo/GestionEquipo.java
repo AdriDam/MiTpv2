@@ -12,9 +12,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 class Jugador {
-    private String nombre;
-    private int numeroCamiseta;
-    private String posicion;
+    final private String nombre;
+    final private int numeroCamiseta;
+    final private String posicion;
 
     public Jugador(String nombre, int numeroCamiseta, String posicion) {
         this.nombre = nombre;
@@ -41,7 +41,7 @@ class Jugador {
 }
 
 public class GestionEquipo {
-    private ArrayList<Jugador> jugadores;
+    final private ArrayList<Jugador> jugadores;
 
     public GestionEquipo() {
         jugadores = new ArrayList<>();
