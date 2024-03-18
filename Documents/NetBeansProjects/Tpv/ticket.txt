@@ -1,0 +1,7 @@
+1	Coca Cola	2,20
+1	Tortilla	2,80
+1	Jamon iberico	6,50
+
+Subtotal:	11,50
+IVA (10%):	1,15
+Total:	12,65
