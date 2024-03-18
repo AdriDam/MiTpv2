@@ -1,7 +1,21 @@
 1	Coca Cola	2,20
-1	Tortilla	2,80
-1	Jamon iberico	6,50
+2	Fanta Naranja	4,20
+2	Fanta Naranja	4,20
+1	Sprite	2,15
+3	Mocha	6,30
+3	Mocha	6,30
+1	Cachuetes	1,50
+1	Nachos con queso	2,20
+1	Aceitunas	1,60
+2	Pimientos de padron	6,40
+1	1906	2,50
+1	Sousas	1,40
+1	Fontvella	1,30
+1	Ribera del Duero	12,00
+1	Cava	9,50
+2	Malbec	25,00
+1	Manzanillas	1,50
 
-Subtotal:	11,50
-IVA (10%):	1,15
-Total:	12,65
+Subtotal:	61,95
+IVA (10%):	6,20
+Total:	68,15
